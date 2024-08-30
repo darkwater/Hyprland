@@ -2251,6 +2251,8 @@ void CKeybindManager::sendshortcut(std::string args) {
         }
     }
 
+    g_pSeatManager->sendKeyboardMods(0, 0, 0, 0);
+
     if (!PWINDOW)
         return;
 
